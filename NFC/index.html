@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venting</title>
+</head>
+<body>
+
+    <h1>Welcome! This is a safe space!</h1>
+
+    <p>This form is just a place, for anyone who needs it, to vent. You may put your email if you wish for any feedback or advice, or you may leave it blank. You can also leave your name, or remain completely anonymous. You also do not need to leave your name if you're leaving your email, everything here is optional.</p>
+
+    <!-- Credit for form script: https://github.com/levinunnink/html-form-to-google-sheet -->
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbz2x4F2o5rC6ut957oD35-yEnH1_nUKAqwjpF47DtqTJeZ5wWq2JoZdgVp60KnUavIdTA/exec" id="form" autocomplete="off">
+        <fieldset>
+
+            <label for="Anonymous Y/N">Would you like to be anonymous? </label>
+            <select name="Anonymous Y/N" id="anon" required>
+                <option selected disabled hidden value="null"><- Select -></option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+
+            <br class="name">
+
+            <label for="Name" class="name">Name: </label>
+            <input name="Name" id="name" type="text" placeholder="First and/or Last Name" class="name">
+
+            <br>
+
+            <label for="Feedback">Would you like to recieve feedback or advice? </label>
+            <select name="Feedback" id="fdbk" required>
+                <option selected disabled hidden value="null"><- Select -></option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+
+            <br class="email">
+
+            <label for="Email" class="email">Email: </label>
+            <input name="Email" id="email" type="email" placeholder="example@domain.com" class="email">
+
+            <br>
+
+            <label for="Gender">Gender: </label>
+            <select name="Gender" id="gen">
+                <option selected disabled hidden value="null"><- Gender -></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Nonbinary">Nonbinary</option>
+                <option value="Other">Other</option>
+                <option value="Prefer not to say">Prefer Not to Say</option>
+            </select>
+            <label>(This is just for stats)</label>
+
+            <br>
+
+            <label for="Vent">Vent/Rant:</label>
+            <br>
+            <textarea name="Vent" id="vent" placeholder="Type your text here..."></textarea>
+
+            <br>
+
+            <input type="button" value="Submit" onclick="script();">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
+<!-- type="submit" -->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Ordering</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <div id="reciept">
+
+        <div id="header">
+            <h1>Reciept</h1>
+        </div>
+        <div id="script">
+            <p id="text"></p>
+        </div>
+        <div id="buttons">
+            <button id="tender" onclick="tender();" class="button">Tender</button>
+            <button id="clear" onclick="clean();" class="button">Clear</button>
+        </div>
+
+    </div>
+
+    <div id="container">
+
+        <h1>Ordering</h1>
+        <table>
+            <tr>
+                <td><div class="container" id="ham"><span>Hamburger</span></div></td>
+                <td><div class="container" id="cheese"><span>Cheeseburger</span></div></td>
+                <td><div class="container" id="pizza"><span>Pizza</span></div></td>
+                <td><div class="container" id="dog"><span>Hot Dog</span></div></td>
+            </tr>
+            <tr>
+                <td><div class="container" id="nuggets"><span>Chicken Nuggets</span></div></td>
+                <td><div class="container" id="fries"><span>French Fries</span></div></td>
+                <td><div class="container" id="cookie"><span>Cookie</span></div></td>
+                <td><div class="container" id="ice"><span>Ice Cream</span></div></td>
+            </tr>
+            <tr>
+                <td><div class="container" id="water"><span>Water</span></div></td>
+                <td><div class="container" id="milk"><span>Milk</span></div></td>
+                <td><div class="container" id="apple"><span>Apple Juice</span></div></td>
+                <td><div class="container" id="grape"><span>Grape Juice</span></div></td>
+            </tr>
+            <tr>
+                <td><div class="container" id="sprite"><span>Sprite</span></div></td>
+                <td><div class="container" id="dr"><span>Dr. Pepper</span></div></td>
+                <td><div class="container" id="root"><span>Root Beer</span></div></td>
+                <td><div class="container" id="cola"><span>Coca-Cola</span></div></td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

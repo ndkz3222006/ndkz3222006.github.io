@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Dancing Script;
+    background: black;
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, pre {
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+input, pre, label {
+    font-weight: bolder;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#bye {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    visibility: hidden;
+}
+
+.aln {
+    padding-top: 60px;
+}
+
+#align {
+    box-shadow: 0 0 20px 20px white;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 60vw;
+    height: fit-content;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#form {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%; 
+}
+
+#div {
+    position: absolute;
+    width: fit-content;
+    padding-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#img {
+    width: 30px;
+    height: auto;
+    display: inline;
+    vertical-align: middle;
+}
+
+#note {
+    display: inline;
+    font-size: 15px;
+}
+
+#div, #img, #note {
+    white-space: nowrap;
+}
+
+#name {
+    border-radius: 10px;
+    border: 3px solid black;
+    background: black;
+    color: white;
+    text-align: center;
+    
+}
+
+#button {
+    border-radius: 10px;
+    border: 3px solid black;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1px 10px 1px 10px;
+}
+
+#vid {
+    display: none;
+    visibility: hidden;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade_out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

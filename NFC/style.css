@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #231942;
+    color: #9f86c0;
+}
+
+fieldset {
+    background: #5e548e;
+    color: #e0b1cb;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 2%;
+    line-height: 5vh;
+    height: fit-content;
+    border-radius: 10px;
+    border: #9f86c0 solid 0.3vw;
+}
+
+p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 1%;
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.1vw;
+    }
+    p {
+        width: 50%;
+        font-size: 1vw;
+    }
+    fieldset {
+        width: 50%;
+    }
+    input,select,textarea {
+        font-size: 0.9vw;
+    }
+    label {
+        font-size: 1.07vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 3vw;
+    }
+    p {
+        width: 50%;
+        font-size: 1.5vw;
+    }
+    fieldset {
+        width: 50%;
+    }
+    input,select,textarea {
+        font-size: 1.3vw;
+    }
+    label {
+        font-size: 1.8vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 3.4vw;
+    }
+    p {
+        width: 75%;
+        font-size: 2.5vw;
+        line-height: 75%;
+    }
+    fieldset {
+        width: 75%;
+    }
+    input,select,textarea {
+        font-size: 2vw;
+    }
+    label {
+        font-size: 2.4vw;
+    }
+}
+
+input,select,textarea {
+    background: #be95c4;
+    color: #5e548e;
+    border-radius: 8px;
+    border: #231942 solid 0.2vw;
+}
+
+select {
+    text-align: center;
+}
+
+.name,.email {
+    display: none;
+    visibility: hidden;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+    height: 30vh;
+}
